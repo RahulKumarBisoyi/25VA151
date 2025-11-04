@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* body{
+            color: blue;
+        } */
+
+        /* .box{
+            color: brown;
+        } */
+
+        /* div p{
+            color:aquamarine;
+        }
+
+        .box > p{
+            background-color: rgb(10, 226, 75);
+        }
+
+        div ~ p{
+            color:rgb(222, 37, 8);
+        } */
+
+        a:hover{
+            color:rgb(53, 211, 74);
+            font-size:20px;
+        }
+
+        a:active{
+            color:darksalmon;
+        }
+
+        a:visited{
+            color: hotpink;
+        }
+
+        ul{
+            list-style:none; display:flex;
+        }
+
+        ul li{
+            margin:20px; border-right:1px solid #999;
+            padding-right:20px;
+        }
+
+        ul li:hover{
+            color:rgb(20, 122, 200);
+        }
+
+        ul li:nth-child(5){
+            border-right:0px;
+        }
+
+        /* CSS Pseudo-Elements:style a specific part of an element */
+       
+        .para::first-letter{
+            color:darkorange;font-size:large;
+        }
+
+        .para::first-line{
+            background-color:goldenrod;
+        }
+
+        .para::after{
+            content:"Read More";
+            color:deeppink;
+            font-size:20px;
+        }
+
+        .para::before{
+            content:"hi guys";
+            color:lightcoral;
+            font-size:20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- CSS Combinators -->
+    <div class="box">   
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus pariatur alias dolor, voluptatem soluta illo ratione praesentium dicta facere molestiae laboriosam obcaecati explicabo sunt? At rem vel et vero, quia maxime alias in consequuntur molestias.
+        </p>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt atque iste consequatur voluptas rerum cum ut beatae enim hic commodi cumque tenetur odio accusantium architecto vel voluptatem debitis, eaque, omnis, eligendi illo sit maxime. Molestiae?
+    </p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dignissimos, quas, ipsam, illum tempora ex officia nihil repellat soluta cum porro vel consequuntur placeat perferendis explicabo enim veritatis assumenda reprehenderit ipsum animi! Amet, doloribus.</p>
+        </div>
+
+    <a target="_blank" href="https://www.google.com">Visit the link</a>
+    <ul>
+        <li>home</li>
+        <li>services</li>
+        <li>about</li>
+        <li>gallery</li>
+        <li>Contact</li>
+    </ul>
+
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam atque! Harum facilis quis repellat illo et ea blanditiis distinctio dolorum eum beatae eos, cumque numquam eligendi sit est tenetur minima dolore sequi voluptatibus rem excepturi non nostrum iure! Ducimus impedit quis ullam omnis repellat?</p>
+    
+</body>
+</html>
