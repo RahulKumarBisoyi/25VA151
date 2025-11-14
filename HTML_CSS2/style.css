@@ -1,0 +1,42 @@
+body{
+    /* background-color: bisque;
+    margin:0;
+    padding:0;
+    background-image: url(wallpapersden.com_a-simple-gradient_1920x1080.jpg);
+    background-repeat: no-repeat;
+    
+    background-position:top left ; */
+    background:url(wallpaper.jpg) no-repeat top right #edebeb;
+    background-size: cover;
+
+
+}
+
+p{
+    font-family:arial;
+    font-size:20px;
+    color: blueviolet;
+    font-weight:700;
+    font-style:italic;
+    text-align:center;
+    text-decoration:underline;
+    text-transform:capitalize;
+    text-shadow: 1px 1px 10px #ab259b ;
+    /* text-wrap:initial
+    text-overflow:;
+     */
+     clear: both;
+
+     
+}
+
+#para{
+    color:#cc1818;
+    display:inline-block;
+}
+
+img{
+    float:left;
+    margin: 3px;
+    border: 5px  solid cyan ;
+}
