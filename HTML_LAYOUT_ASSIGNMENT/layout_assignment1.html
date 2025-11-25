@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+    <style>
+        body,*{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            
+        }
+        .bigbox{
+        
+            margin: 40px;
+            padding: 0px;
+            border: 2px solid #121212;
+            background-color: black;
+            
+        }
+
+        .box1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:50px;
+            background-color:rgb(44, 159, 205);
+            margin: 10px;
+
+        }
+
+        .box2{
+            height: 50px;
+            background-color: rgb(44, 159, 205);
+            margin:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .rbox{}
+
+        .lbox{}
+
+        .pt{
+            height:50px;
+            width: 1000px;
+            background-color: #FE8081;
+            margin:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .ct1{
+            height:200px;
+            width:1000px;
+            background-color: bisque;
+            margin:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ct2{
+            height:200px;
+            width:490px;
+            background-color: bisque;
+            margin:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gh{
+            display:flex;
+            flex-direction: row;
+            
+        }
+        .jk{
+            height:235px;
+            background-color:yellow;
+            margin:10px;
+            width:395px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .foot{
+            background-color: grey;
+            
+            margin:10px;
+            height:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div align="center" class="box1">#Header</div>
+        <div align="center" class="box2">#Nav Global</div>
+        <div class="content">
+            <div class="rbox">
+                <div align="center" class="pt">#PageTitle</div>
+                <div align="center" class="ct1">#content1</div>
+                <div class="gh">
+                    <div class="ct2" align="center">#Content2</div>
+                    <div class="ct2" align="center">#Content3</div>
+                </div>
+            </div>
+            <div class="lbox">
+                <div align="center" class="jk">#NavLocal</div>
+                <div align="center" class="jk">#SideBar</div>
+            </div>
+            
+        </div>
+        <div align="center" class="foot">#Footer</div>
+
+    </div>
+    
+</body>
+</html>
