@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+#box1 {
+    border: 2px solid black;
+    background-color: rgb(228, 223, 223);
+}
+
+#box2 {
+    border: 2px solid rgb(220, 92, 7);
+    margin: 40px;
+    margin-left: 500px;
+    width: 500px;
+    height: 430px;
+    background-color: white;
+}
+
+#photo {
+    text-align: center;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+#pname {
+    position: relative;
+    left: 20px;
+}
+
+#p1 {
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+    color: rgb(82, 80, 80);
+}
+
+#price {
+    position: relative;
+    left: 20px;
+}
+
+#price2 {
+    position: relative;
+    left: 30px;
+}
+
+h1 {
+    background-color: rgb(121, 9, 169);
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+#cart {
+    margin: 20px;
+    width: 450px;
+    height: 35px;
+    background-color: rgb(23, 166, 191);
+    color: white;
+}
