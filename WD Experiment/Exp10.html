@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp10</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        nav{
+            background: #1a73e8;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo{
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .right{
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+        }
+
+        .menu{
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .menu li a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        #toggle{
+            display: none;
+        }
+
+        .hamburger{
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        @media (max-width: 768px){
+
+            .menu{
+                display: none;
+                flex-direction: column;
+                background: #0f4db8;
+                width: 100%;
+                text-align: center;
+                padding: 20px 0;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+
+            .menu li{
+                padding: 15px 0;
+            }
+
+            #toggle:checked ~ .menu{
+                display: flex;
+            }
+
+            .hamburger{
+                display: block;
+            }
+
+            .right{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">UrbanCart</div>
+
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="hamburger">&#9776;</label>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+
+        <div class="right">
+            <span>Cart 🛒</span>
+            <span>Login</span>
+        </div>
+    </nav>
+
+</body>
+</html>
